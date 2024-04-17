@@ -9,6 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "format": "npx prettier . --write",
     "stylelint": "npx stylelint 'src/**/*.{css,scss}' --fix",
+    "typecheck": "tsc --noEmit",
     "preview": "vite preview",
     "prepare": "husky install"
   },
@@ -43,7 +44,8 @@
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
       "prettier . --write",
-      "eslint . --max-warnings 0 --fix"
+      "eslint . --max-warnings 0 --fix",
+      "tsc --noEmit"
     ],
     "src/**/*.{css,scss}": [
       "npx stylelint 'src/**/*.{css,scss}' --fix"
