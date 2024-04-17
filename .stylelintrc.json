@@ -2,5 +2,8 @@
   "extends": [
     "stylelint-config-sass-guidelines",
     "stylelint-config-clean-order/error"
-  ]
+  ],
+  "rules": {
+    "selector-max-id": 1
+  }
 }

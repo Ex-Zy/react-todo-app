@@ -41,11 +41,11 @@
     "vite": "^5.2.0"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "src/**/*.{ts,tsx}": [
       "prettier . --write",
       "eslint . --max-warnings 0 --fix"
     ],
-    "*.{css,scss}": [
+    "src/**/*.{css,scss}": [
       "npx stylelint 'src/**/*.{css,scss}' --fix"
     ]
   }
