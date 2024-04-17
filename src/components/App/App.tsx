@@ -1,15 +1,13 @@
 import '@/components/App/App.css'
 import AppHeader from '@/components/AppHeader'
 import AppFooter from '@/components/AppFooter'
-import SearchBar from '@/components/SearchBar'
-import Todo from '@/components/Todo/Todo.tsx'
+import AppTodo from '@/components/AppTodo'
 
 function App() {
   return (
     <>
       <AppHeader />
-      <SearchBar />
-      <Todo />
+      <AppTodo />
       <AppFooter />
     </>
   )

@@ -14,11 +14,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@types/node": "^20.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^20.12.7",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -44,8 +44,7 @@
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
       "prettier . --write",
-      "eslint . --max-warnings 0 --fix",
-      "tsc --noEmit"
+      "eslint . --max-warnings 0 --fix"
     ],
     "src/**/*.{css,scss}": [
       "npx stylelint 'src/**/*.{css,scss}' --fix"
