@@ -17,3 +17,13 @@ body {
 
   font-synthesis: none;
 }
+
+[data-theme='light'] {
+  --bg-color-app: #f9f9f9;
+  --bg-image-app: url('@/assets/bg-desktop-light.jpg');
+}
+
+[data-theme='dark'] {
+  --bg-color-app: #171823;
+  --bg-image-app: url('@/assets/bg-desktop-dark.jpg');
+}

@@ -22,10 +22,3 @@
   --color-text-todo-footer-active: #3a7cfd;
   --color-text-todo-footer-hover: #e3e4f1;
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-color-app: #fafafa;
-    --bg-image-app: url('@/assets/bg-desktop-light.jpg');
-  }
-}
