@@ -1,0 +1,31 @@
+:root {
+  // App
+  --bg-color-app: #171823;
+  --bg-image-app: url('@/assets/bg-desktop-dark.jpg');
+
+  // AddTodo
+  --fs-add-todo: 18px;
+  --color-placeholder-add-todo: #767992;
+  --color-text-add-todo: #c8cbe7;
+  --bg-color-add-todo: #25273d;
+
+  // TodoItem
+  --fs-todo-item: 18px;
+  --bg-color-todo-item: #25273d;
+  --border-color-todo-item: #393a4b;
+  --color-text-todo-item: #c8cbe7;
+  --color-text-todo-item-completed: #4d5067;
+
+  // TodoFooter
+  --fs-todo-footer: 14px;
+  --color-text-todo-footer: #5b5e7e;
+  --color-text-todo-footer-active: #3a7cfd;
+  --color-text-todo-footer-hover: #e3e4f1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color-app: #fafafa;
+    --bg-image-app: url('@/assets/bg-desktop-light.jpg');
+  }
+}

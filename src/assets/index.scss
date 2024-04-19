@@ -1,0 +1,19 @@
+@import 'modern-normalize/modern-normalize.css';
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  color: #fff;
+
+  color-scheme: dark light;
+  background-color: var(--bg-color-app);
+  background-image: var(--bg-image-app);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 300px;
+
+  font-synthesis: none;
+}

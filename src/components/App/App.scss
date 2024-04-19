@@ -1,0 +1,9 @@
+.app {
+  @include mobile {
+    width: 320px;
+    margin: 48px auto;
+  }
+
+  width: 540px;
+  margin: 70px auto;
+}
