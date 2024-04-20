@@ -1,3 +1,26 @@
 .todo-item {
-  border: 1px solid #e1e1e1;
+  @include input(
+    $fs: var(--fs-todo-item),
+    $radius: null,
+    $color: var(--color-text-todo-item),
+    $bg: var(--bg-color-todo-item)
+  );
+
+  @include mobile {
+    @include input(
+      $fs: 12px,
+      $p-inline: 52px 20px,
+      $h: 48px,
+      $lh: 48px,
+      $ls: -0.17px,
+      $radius: null,
+      $color: var(--color-text-todo-item),
+      $bg: var(--bg-color-todo-item)
+    );
+  }
+
+  &--completed {
+    color: var(--color-text-todo-item-completed);
+    text-decoration: line-through;
+  }
 }

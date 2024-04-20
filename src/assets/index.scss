@@ -19,6 +19,9 @@ body {
 }
 
 [data-theme='light'] {
+  // General
+  --bg-color-divider: #e3e4f1;
+
   // App
   --bg-color-app: #f9f9f9;
   --bg-image-app: url('@/assets/bg-desktop-light.jpg');
@@ -29,9 +32,17 @@ body {
   --bg-color-add-todo: #fff;
   --shadow-add-todo: 0 35px 50px -15px rgba(194, 195, 214, 0.5);
   --border-color-add-todo-checkbox: #e3e4f1;
+
+  // TodoListItem
+  --bg-color-todo-item: #fff;
+  --color-text-todo-item: #494c6b;
+  --color-text-todo-item-completed: #d1d2da;
 }
 
 [data-theme='dark'] {
+  // General
+  --bg-color-divider: #393a4b;
+
   // App
   --bg-color-app: #171823;
   --bg-image-app: url('@/assets/bg-desktop-dark.jpg');
@@ -42,4 +53,9 @@ body {
   --bg-color-add-todo: #25273d;
   --shadow-add-todo: 0 35px 50px -15px rgba(0, 0, 0, 0.5);
   --border-color-add-todo-checkbox: #393a4b;
+
+  // TodoListItem
+  --bg-color-todo-item: #25273d;
+  --color-text-todo-item: #c8cbe7;
+  --color-text-todo-item-completed: #4d5067;
 }

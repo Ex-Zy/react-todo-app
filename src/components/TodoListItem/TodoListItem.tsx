@@ -7,7 +7,13 @@ interface TodoListItemProps {
 }
 
 const TodoListItem: React.FC<TodoListItemProps> = ({ todo }) => {
-  return <div className="todo-item">{todo.text}</div>
+  return (
+    <div
+      className={`todo-item ${todo.completed ? 'todo-item--completed' : ''}`}
+    >
+      {todo.text}
+    </div>
+  )
 }
 
 export default TodoListItem

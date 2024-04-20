@@ -3,3 +3,38 @@
     @content;
   }
 }
+
+@mixin input(
+  $fs: var(--fs-add-todo),
+  $p-inline: 72px 40px,
+  $h: 64px,
+  $lh: 68px,
+  $ls: -0.01em,
+  $radius: var(--radius),
+  $color: var(--color-text-add-todo),
+  $bg: var(--bg-color-add-todo),
+  $shadow: var(--shadow-add-todo)
+) {
+  display: block;
+
+  width: 100%;
+  height: $h;
+  padding-inline: $p-inline;
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: $fs;
+  line-height: $lh;
+  color: $color;
+  letter-spacing: $ls;
+
+  background: $bg;
+  border: 0;
+
+  @if $radius {
+    border-radius: $radius;
+  }
+
+  @if $shadow {
+    box-shadow: $shadow;
+  }
+}
