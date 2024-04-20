@@ -6,15 +6,16 @@ import React, { Fragment } from 'react'
 
 interface TodoProps {
   todos: TodoItem[]
+  onCompletedTodo: (todo: TodoItem, completed: boolean) => void
 }
 
-const Todo: React.FC<TodoProps> = ({ todos }) => {
+const Todo: React.FC<TodoProps> = ({ todos, onCompletedTodo }) => {
   return (
     <div className="todo todo--margin">
       <div className="todo-list">
         {todos.map((todo) => (
           <Fragment key={todo.id}>
-            <TodoListItem todo={todo} />
+            <TodoListItem todo={todo} onCompletedTodo={onCompletedTodo} />
             <div className="todo-divider" />
           </Fragment>
         ))}

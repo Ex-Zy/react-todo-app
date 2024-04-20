@@ -19,6 +19,9 @@
     );
   }
 
+  cursor: pointer;
+  position: relative;
+
   &--completed {
     color: var(--color-text-todo-item-completed);
     text-decoration: line-through;

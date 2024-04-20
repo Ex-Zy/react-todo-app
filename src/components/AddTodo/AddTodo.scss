@@ -36,14 +36,8 @@
       height: 20px;
     }
 
-    position: absolute;
-    top: 50%;
-    left: 24px;
-    transform: translateY(-50%);
-
     width: 24px;
     height: 24px;
-
     border: 1px solid var(--border-color-add-todo-checkbox);
     border-radius: 50%;
   }
