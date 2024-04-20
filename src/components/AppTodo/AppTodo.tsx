@@ -18,10 +18,19 @@ function AppTodo() {
     setTodos(newTodos)
   }
 
+  function handleDeleteTodo(todo: TodoItem) {
+    const newTodos: TodoItem[] = todos.filter((t) => t.id !== todo.id)
+    setTodos(newTodos)
+  }
+
   return (
     <div className="app-todo">
       <AddTodo className="add-todo--margin" onAddTodo={handleAddTodo} />
-      <Todo todos={todos} onCompletedTodo={handleCompleteTodo} />
+      <Todo
+        todos={todos}
+        onCompletedTodo={handleCompleteTodo}
+        onDeleteTodo={handleDeleteTodo}
+      />
     </div>
   )
 }

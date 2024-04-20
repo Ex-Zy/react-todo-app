@@ -9,7 +9,7 @@
   @include mobile {
     @include input(
       $fs: 12px,
-      $p-inline: 52px 20px,
+      $p-inline: 52px 60px,
       $h: 48px,
       $lh: 48px,
       $ls: -0.17px,
@@ -25,5 +25,30 @@
   &--completed {
     color: var(--color-text-todo-item-completed);
     text-decoration: line-through;
+  }
+
+  &__delete {
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 18px;
+    height: 18px;
+
+    background: transparent;
+    border: 0;
+
+    transition: opacity 0.25s;
+  }
+
+  &__delete:hover {
+    opacity: 0.5;
   }
 }
