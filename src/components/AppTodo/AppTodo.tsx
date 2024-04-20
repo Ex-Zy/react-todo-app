@@ -20,8 +20,8 @@ function AppTodo() {
   }
   return (
     <div className="app-todo">
-      <AddTodo onAddTodo={handleAddTodo} />
-      <Todo />
+      <AddTodo className="add-todo--margin" onAddTodo={handleAddTodo} />
+      <Todo todos={todos} />
     </div>
   )
 }

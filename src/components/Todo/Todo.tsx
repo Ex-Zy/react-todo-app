@@ -1,15 +1,20 @@
 import '@/components/Todo/Todo.scss'
-import TodoItem from '@/components/TodoItem'
+import TodoListItem from '@/components/TodoListItem'
 import TodoFooter from '@/components/TodoFooter'
+import { TodoItem } from '@/types'
+import React from 'react'
 
-function Todo() {
+interface TodoProps {
+  todos: TodoItem[]
+}
+
+const Todo: React.FC<TodoProps> = ({ todos }) => {
   return (
-    <div className="todo">
-      <h2>Todo list</h2>
+    <div className="todo todo--margin">
       <div className="todo-list">
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
+        {todos.map((todo) => (
+          <TodoListItem key={todo.id} todo={todo} />
+        ))}
       </div>
       <TodoFooter />
     </div>
