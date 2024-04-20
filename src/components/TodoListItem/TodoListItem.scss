@@ -3,7 +3,8 @@
     $fs: var(--fs-todo-item),
     $radius: null,
     $color: var(--color-text-todo-item),
-    $bg: var(--bg-color-todo-item)
+    $bg: var(--bg-color-todo-item),
+    $shadow: null
   );
 
   @include mobile {
@@ -15,7 +16,8 @@
       $ls: -0.17px,
       $radius: null,
       $color: var(--color-text-todo-item),
-      $bg: var(--bg-color-todo-item)
+      $bg: var(--bg-color-todo-item),
+      $shadow: null
     );
   }
 

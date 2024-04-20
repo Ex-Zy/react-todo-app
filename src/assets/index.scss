@@ -37,6 +37,11 @@ body {
   --bg-color-todo-item: #fff;
   --color-text-todo-item: #494c6b;
   --color-text-todo-item-completed: #d1d2da;
+
+  // TodoFooter
+  --bg-color-todo-footer: #fff;
+  --color-text-todo-footer: #9495a5;
+  --color-text-todo-footer-hover: #494c6b;
 }
 
 [data-theme='dark'] {
@@ -58,4 +63,9 @@ body {
   --bg-color-todo-item: #25273d;
   --color-text-todo-item: #c8cbe7;
   --color-text-todo-item-completed: #4d5067;
+
+  // TodoFooter
+  --bg-color-todo-footer: #25273d;
+  --color-text-todo-footer: #5b5e7e;
+  --color-text-todo-footer-hover: #e3e4f1;
 }

@@ -6,12 +6,14 @@ import React, { Fragment } from 'react'
 
 interface TodoProps {
   todos: TodoItem[]
+  itemsLeft: number
   onCompletedTodo: (todo: TodoItem, completed: boolean) => void
   onDeleteTodo: (todo: TodoItem) => void
 }
 
 const Todo: React.FC<TodoProps> = ({
   todos,
+  itemsLeft,
   onCompletedTodo,
   onDeleteTodo,
 }) => {
@@ -29,7 +31,7 @@ const Todo: React.FC<TodoProps> = ({
           </Fragment>
         ))}
       </div>
-      <TodoFooter />
+      <TodoFooter itemsLeft={itemsLeft} />
     </div>
   )
 }
