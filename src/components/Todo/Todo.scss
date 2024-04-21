@@ -1,5 +1,6 @@
 .todo {
   position: relative;
+  box-shadow: var(--shadow-todo);
 
   &--margin {
     margin-top: 24px;

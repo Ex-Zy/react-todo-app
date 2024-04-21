@@ -1,3 +1,13 @@
-footer {
-  border: 2px solid #646cff;
+.app-footer {
+  padding: 50px 0;
+
+  &__text {
+    margin: 0;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: var(--fs-app-footer);
+    color: var(--color-text-app-footer);
+    text-align: center;
+    letter-spacing: -0.19px;
+  }
 }

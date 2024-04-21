@@ -15,6 +15,9 @@
   --shadow-add-todo: 0 35px 50px -15px rgba(0, 0, 0, 0.5);
   --border-color-add-todo-checkbox: #e3e4f1;
 
+  // TodoList
+  --shadow-todo: 0 35px 50px -15px rgba(0, 0, 0, 0.5);
+
   // TodoListItem
   --fs-todo-item: 18px;
   --bg-color-todo-item: #25273d;
@@ -27,4 +30,8 @@
   --color-text-todo-footer: #5b5e7e;
   --color-text-todo-footer-active: #3a7cfd;
   --color-text-todo-footer-hover: #e3e4f1;
+
+  // AppFooter
+  --fs-app-footer: 14px;
+  --color-text-app-footer: #5b5e7e;
 }

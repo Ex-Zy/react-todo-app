@@ -11,6 +11,8 @@
 
 .items-left,
 .clear-completed {
+  cursor: pointer;
+
   font-family: 'Josefin Sans', sans-serif;
   font-size: var(--fs-todo-footer);
   color: var(--color-text-todo-footer);

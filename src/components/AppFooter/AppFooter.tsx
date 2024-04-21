@@ -2,8 +2,8 @@ import '@/components/AppFooter/AppFooter.scss'
 
 function AppFooter() {
   return (
-    <footer>
-      <h5>App Footer</h5>
+    <footer className="app-footer">
+      <p className="app-footer__text">Drag and drop to reorder list</p>
     </footer>
   )
 }
