@@ -1,6 +1,7 @@
 import '@/components/TodoFilter/TodoFilter.scss'
 import React from 'react'
 import type { FilterItem } from '@/types'
+import { useMediaQuery } from 'usehooks-ts'
 
 interface TodoFilterProps {
   filters: FilterItem[]
@@ -11,8 +12,10 @@ export const TodoFilter: React.FC<TodoFilterProps> = ({
   filters,
   onFilterTodo,
 }) => {
+  const isMobile = useMediaQuery('(max-width: 600px)')
+
   return (
-    <div className="todo-filter">
+    <div className={`todo-filter ${isMobile ? 'todo-filter--mobile' : ''}`}>
       {filters.map((item) => (
         <div
           key={item.id}

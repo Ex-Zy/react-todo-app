@@ -46,6 +46,10 @@ body {
   --color-text-todo-footer: #9495a5;
   --color-text-todo-footer-hover: #494c6b;
 
+  // TodoFilter
+  --bg-todo-filter: #fff;
+  --shadow-todo-filter: 0 35px 50px -15px rgba(194, 195, 214, 0.5);
+
   // AppFooter
   --color-text-app-footer: #9495a5;
 }
@@ -77,6 +81,10 @@ body {
   --bg-color-todo-footer: #25273d;
   --color-text-todo-footer: #5b5e7e;
   --color-text-todo-footer-hover: #e3e4f1;
+
+  // TodoFilter
+  --bg-todo-filter: #25273d;
+  --shadow-todo-filter: 0 35px 50px -15px rgba(0, 0, 0, 0.5);
 
   // AppFooter
   --color-text-app-footer: #5b5e7e;

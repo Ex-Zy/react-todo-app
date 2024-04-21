@@ -1,5 +1,12 @@
 .todo-filter {
   display: flex;
+  justify-content: center;
+
+  &--mobile {
+    margin-top: 16px;
+    background: var(--bg-todo-filter);
+    box-shadow: var(--shadow-todo-filter);
+  }
 }
 
 .filter-item {
