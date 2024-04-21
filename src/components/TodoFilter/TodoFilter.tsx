@@ -7,9 +7,9 @@ interface TodoFilterProps {
 }
 
 const initialItems: FilterItem[] = [
-  { id: 1, name: 'All', isActive: true },
-  { id: 2, name: 'Active', isActive: false },
-  { id: 3, name: 'Completed', isActive: false },
+  { id: '1', name: 'All', isActive: true },
+  { id: '2', name: 'Active', isActive: false },
+  { id: '3', name: 'Completed', isActive: false },
 ]
 
 export const TodoFilter: React.FC<TodoFilterProps> = ({ onFilterTodo }) => {

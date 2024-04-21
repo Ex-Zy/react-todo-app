@@ -5,7 +5,7 @@ export interface TodoItem {
 }
 
 export interface FilterItem {
-  id: number
+  id: string
   name: FilterName
   isActive: boolean
 }

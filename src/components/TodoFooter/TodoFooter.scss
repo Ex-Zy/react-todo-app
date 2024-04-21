@@ -8,3 +8,11 @@
 
   background: var(--bg-color-todo-footer);
 }
+
+.items-left,
+.clear-completed {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: var(--fs-todo-footer);
+  color: var(--color-text-todo-footer);
+  letter-spacing: -0.19px;
+}
