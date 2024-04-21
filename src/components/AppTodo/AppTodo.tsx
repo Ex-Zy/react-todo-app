@@ -2,7 +2,8 @@ import AddTodo from '@/components/AddTodo'
 import Todo from '@/components/Todo'
 import { useMemo, useState } from 'react'
 import { initialTodos } from '@/components/AppTodo/AppTodo.constants.ts'
-import { FilterName, TodoItem } from '@/types'
+import { FilterItem, FilterName, TodoItem } from '@/types'
+import { useFilterTodo } from '@/hooks/useFilterTodo.ts'
 
 function AppTodo() {
   const [todos, setTodos] = useState<TodoItem[]>(initialTodos)
@@ -10,6 +11,7 @@ function AppTodo() {
     () => todos.filter((t) => !t.completed).length,
     [todos]
   )
+  const { filters, setActiveFilter } = useFilterTodo()
 
   function handleAddTodo(todo: TodoItem) {
     setTodos([todo, ...todos])
@@ -27,14 +29,20 @@ function AppTodo() {
     setTodos(newTodos)
   }
 
-  function handleFilterTodo(filterName: FilterName) {
+  function handleFilterTodo(filter: FilterItem) {
     const variants: Record<FilterName, TodoItem[]> = {
       All: [...initialTodos],
       Active: initialTodos.filter((todo) => !todo.completed),
       Completed: initialTodos.filter((todo) => todo.completed),
     }
 
-    setTodos(variants[filterName])
+    setActiveFilter(filter)
+    setTodos(variants[filter.name])
+  }
+
+  function handleClearCompleted() {
+    setActiveFilter(filters[0])
+    setTodos(initialTodos.map((todo) => ({ ...todo, completed: false })))
   }
 
   return (
@@ -42,10 +50,12 @@ function AppTodo() {
       <AddTodo className="add-todo--margin" onAddTodo={handleAddTodo} />
       <Todo
         todos={todos}
+        filters={filters}
         itemsLeft={itemsLeft}
         onCompletedTodo={handleCompleteTodo}
         onDeleteTodo={handleDeleteTodo}
         onFilterTodo={handleFilterTodo}
+        onClearCompleted={handleClearCompleted}
       />
     </div>
   )
