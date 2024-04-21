@@ -1,6 +1,6 @@
 import '@/components/Todo/Todo.scss'
-import TodoListItem from '@/components/TodoListItem'
-import TodoFooter from '@/components/TodoFooter'
+import TodoFooter from '@/components/TodoFooter/TodoFooter.tsx'
+import TodoListItem from '@/components/TodoListItem/TodoListItem.tsx'
 import type { FilterItem, TodoItem } from '@/types'
 import React, { Fragment } from 'react'
 import { useMediaQuery } from 'usehooks-ts'

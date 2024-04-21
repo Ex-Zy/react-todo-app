@@ -1,5 +1,5 @@
-import AddTodo from '@/components/AddTodo'
-import Todo from '@/components/Todo'
+import AddTodo from '@/components/AddTodo/AddTodo.tsx'
+import Todo from '@/components/Todo/Todo.tsx'
 import { useMemo, useState } from 'react'
 import { initialTodos } from '@/components/AppTodo/AppTodo.constants.ts'
 import { FilterItem, FilterName, TodoItem } from '@/types'

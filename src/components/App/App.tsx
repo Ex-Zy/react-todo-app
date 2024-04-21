@@ -1,7 +1,7 @@
 import '@/components/App/App.scss'
-import AppHeader from '@/components/AppHeader'
-import AppFooter from '@/components/AppFooter'
-import AppTodo from '@/components/AppTodo'
+import AppHeader from '@/components/AppHeader/AppHeader.tsx'
+import AppTodo from '@/components/AppTodo/AppTodo.tsx'
+import AppFooter from '@/components/AppFooter/AppFooter.tsx'
 
 function App() {
   return (
