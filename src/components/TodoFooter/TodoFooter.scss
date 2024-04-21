@@ -8,28 +8,3 @@
 
   background: var(--bg-color-todo-footer);
 }
-
-.filter-by {
-  display: flex;
-
-  &__item {
-    cursor: pointer;
-
-    padding: 14px 8px;
-
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    color: var(--color-text-todo-footer);
-    letter-spacing: -0.19px;
-  }
-
-  &__item:hover {
-    color: var(--color-text-todo-footer-hover);
-  }
-
-  &__item--active,
-  &__item--active:hover {
-    color: var(--color-text-todo-footer-active);
-  }
-}

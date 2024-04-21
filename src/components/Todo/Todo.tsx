@@ -1,7 +1,7 @@
 import '@/components/Todo/Todo.scss'
 import TodoListItem from '@/components/TodoListItem'
 import TodoFooter from '@/components/TodoFooter'
-import { TodoItem } from '@/types'
+import { FilterName, TodoItem } from '@/types'
 import React, { Fragment } from 'react'
 
 interface TodoProps {
@@ -9,6 +9,7 @@ interface TodoProps {
   itemsLeft: number
   onCompletedTodo: (todo: TodoItem, completed: boolean) => void
   onDeleteTodo: (todo: TodoItem) => void
+  onFilterTodo: (filterName: FilterName) => void
 }
 
 const Todo: React.FC<TodoProps> = ({
@@ -16,6 +17,7 @@ const Todo: React.FC<TodoProps> = ({
   itemsLeft,
   onCompletedTodo,
   onDeleteTodo,
+  onFilterTodo,
 }) => {
   return (
     <div className="todo todo--margin">
@@ -31,7 +33,7 @@ const Todo: React.FC<TodoProps> = ({
           </Fragment>
         ))}
       </div>
-      <TodoFooter itemsLeft={itemsLeft} />
+      <TodoFooter itemsLeft={itemsLeft} onFilterTodo={onFilterTodo} />
     </div>
   )
 }

@@ -1,0 +1,24 @@
+.todo-filter {
+  display: flex;
+}
+
+.filter-item {
+  cursor: pointer;
+
+  padding: 14px 8px;
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-text-todo-footer);
+  letter-spacing: -0.19px;
+
+  &:hover {
+    color: var(--color-text-todo-footer-hover);
+  }
+
+  &--active,
+  &--active:hover {
+    color: var(--color-text-todo-footer-active);
+  }
+}
