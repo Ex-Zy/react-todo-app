@@ -6,12 +6,13 @@ import { FilterItem, FilterName, TodoItem } from '@/types'
 import { useFilterTodo } from '@/hooks/useFilterTodo.ts'
 
 function AppTodo() {
+  const { filters, setActiveFilter } = useFilterTodo()
+
   const [todos, setTodos] = useState<TodoItem[]>(initialTodos)
   const itemsLeft = useMemo(
     () => todos.filter((t) => !t.completed).length,
     [todos]
   )
-  const { filters, setActiveFilter } = useFilterTodo()
 
   function handleAddTodo(todo: TodoItem) {
     setTodos([todo, ...todos])
